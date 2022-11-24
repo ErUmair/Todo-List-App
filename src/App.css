@@ -1,0 +1,196 @@
+.App {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70vw;
+    height: 90vh;
+    background-color: #276c91;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.title::after {
+    content: '';
+    width: 180px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
+.container .todo-form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .todo-form .form-control {
+    width: 77%;
+    height: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.container .todo-form .add-btn {
+    width: 10%;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container .todo-form .add-btn:hover {
+    background: white;
+    color: #276c91;
+}
+
+.container .todo-form .add-btn .add-icon {
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.container .todo-form .add-btn .allDelete-icon {
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.container .todo-form .allDelete-btn {
+    margin-right: 10px;
+}
+
+.todos-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.todo-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.todos-list {
+    width: 30%;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.todo-card {
+    width: 100%;
+    height: auto;
+    color: #276c91;
+    background: white;
+    padding: 2px 5px;
+    /* border-radius: 5px; */
+    margin-top: 3px;
+    /* margin-right: 250px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px; */
+}
+
+.card-text {
+    margin: auto;
+}
+
+.todo-check-icon {
+    color: white;
+    background: #276c91;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.todo-trash-icon {
+    color: rgb(248, 239, 239);
+    background: rgb(240, 37, 6);
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pending-card {
+    width: 100%;
+    height: auto;
+    color: #000;
+    background: yellow;
+    padding: 2px 5px;
+    /* border-radius: 5px; */
+    margin-top: 3px;
+}
+
+.todo-pending-icon {
+    background: white;
+    color: green;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.completed-card {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background: #00b09b;
+    padding: 2px 5px;
+    /* border-radius: 5px; */
+    margin-top: 3px;
+}
+
+.todo-completed-icon {
+    background: green;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.todo-edit-icon {
+    color: white;
+    background: #276c91;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.blank-msg {
+    color: #000;
+    font-size: 21px;
+    font-weight: 500;
+    margin: auto;
+    margin-top: 15px;
+}
